@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem arredondada com filtro</title>
+
+    <style>
+        img {
+            border-radius: 50%;
+            height: 30vh;
+            display: block;
+            margin: auto;
+        }
+
+        .imagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 250px);
+            justify-content: center;
+            
+        }
+
+        .imagens img{
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        div{
+            width: 100vw;
+            background-color: #45936c;
+        }
+
+        .saturate {
+            filter: saturate(7);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .shadow {
+            filter: sepia(20%);
+            filter: saturate(2);
+        }
+
+        .brightness {
+            filter: invert();
+        }
+
+        .blur{
+            filter: hue-rotate(98deg);
+        }
+
+        .grayscale{
+            filter: drop-shadow(30px 10px 4px red);
+        }
+
+        .huerote{
+            filter: hue-rotate(200deg);
+        }
+
+        .newspaper {
+
+            column-count: 3;
+            column-gap: 300px;
+            column-rule: 3px solid lightcoral;
+        }
+    </style>
+</head>
+<body style="background:#e5ead4">
+
+    <div style="width: 100%; height:80px; text-align: center; padding: 50px; background-color: #9acc77;">
+        <h1 style="font-family: arial;">Harry Calvo</h1>
+    </div>
+
+    <div>
+        <img src="https://scontent.ccdn.cloud/image/allsongs/1af55279-c953-4b8d-bf71-74e426ce853e/i-one-direction-in-versione-pelata-maxw-1200.jpg" class="sepia">
+    </div>
+
+    <div class="imagens">
+        <div style="width: 150px; height: 150px; background: repeating-radial-gradient(circle, #5d31cb 10%, #d47319 15%); border-radius: 50%;"></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXeFZLcXiR94MhG9rtr0iUafipoDtT3z7TAShHb1G5dpLrIAPXtZjQGeuUjdB6VmjXuZ8&usqp=CAU" class="saturate">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4kbg0KKzyCMyI7_J9JzRUVWpkIyzF53Zx8EyBEjCf-7B9B9V3hD8ZfL7jcwQs_Oov7Q&usqp=CAU" class="shadow">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwDxl83DVybtkqLojNYzeDwI8kMC2XHgYDgw_SGE2s8ByuII8QWRyZIhlaQUKiJ-b9u2g&usqp=CAU" class="brightness">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbiymN6wO7wQ4_kUwURnqpfnn6D33wZDsNzfxk2iaDmDAjUl9j6aYziv1MgZOnJiPfzF0&usqp=CAU" class="grayscale">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYVebRDaB9N4h7I7473rCvruWvGCPJ-GhhjU2Y0SwO262RPwrb6l0kziPVXYEBqqOuL4&usqp=CAU" class="huerote"> 
+    </div>
+
+    <p class="newspaper" style="font-family: arial">Confesso, acordei achando tudo indiferente
+        <br> Verdade, acabei sentindo cada dia igual
+        <br>Quem sabe isso passa sendo eu tão inconstante
+        <br>Quem sabe o amor tenha chegado ao final
+        <br>Não vou dizer que tudo é banalidade
+        <br>Ainda há surpresas, mas eu sempre quero mais
+        <br>É mesmo exagero ou vaidade
+        <br>Eu não te dou sossego, eu não lhe deixo em paz
+        <br>Não vou pedir, a porta aberta é como olhar pra trás
+        <br>Não vou mentir, nem tudo que eu falei eu sou capaz
+        <br>Não vou roubar teu tempo, eu já roubei demais
+        <br>Tanta coisa foi acumulando em nossa vida
+        <br>Eu fui sentindo falta de um vão pra me esconder
+        <br>Aos poucos fui ficando mesmo sem saída
+        <br>Perder o vazio é empobrecer
+        <br>Não vou querer ser o dono da verdade
+        <br>Também tenho saudade, mas já são quatro e tal
+        <br>Talvez eu passe um tempo longe da cidade
+        <br>Quem sabe eu volte cedo, ou não volte mais
+        <br>Não vou pedir, a porta aberta é como olhar pra trás
+        <br>Não vou mentir, nem tudo que eu falei eu sou capaz
+        <br>Não vou roubar teu tempo, eu já roubei demais
+        <br>Não vou querer ser o dono da verdade
+        <br>Também tenho saudade, mas já são quatro e tal
+        <br>Talvez eu passe um tempo longe da cidade
+        <br>Quem sabe eu volte cedo, ou não volte mais
+        <br>Não vou pedir, a porta aberta é como olhar pra trás
+        <br>Não vou mentir, nem tudo que eu falei eu sou capaz
+        <br>Não vou roubar teu tempo, eu já roubei demais
+    </p>
+
+</body>
+</html>
